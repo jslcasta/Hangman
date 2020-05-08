@@ -1,0 +1,41 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.img {
+  width: 300px;
+  height: 300px;
+}
+
+.div {
+  width: 100%;
+  max-width: 500px;
+  padding: 15px;
+  margin: auto;
+}
+.div .checkbox {
+  font-weight: 400;
+}
+.div .form-control {
+  display: inline;
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  vertical-align: middle;
+  width: 35px;
+  font-size: 16px;
+}
+.div .form-control:focus {
+  z-index: 2;
+}
