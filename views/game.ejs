@@ -1,0 +1,12 @@
+<%- include("partials/header"); -%>
+
+  <h1 class="h3 mb-3 font-weight-normal">El Ahorcado de Jose Luis Castro.</h1>
+  <img class="mb-4 img" src="images/<%= turn %>.png" alt="hangman">
+  <p class="h3 mb-3 font-weight-normal"> <%= playerWord %> </p>
+  <p class="h6 mb-3 font-weight-normal">Letras usadas: <%= userLetters %> </p>
+  <form class="form" action="/game" method="post">
+    <input type="text" name="letter" class="form-control" maxlength="1" autocomplete="off" required>
+    <button class="btn btn-lg btn-primary" type="submit" name="button">Comprobar</button>
+  </form>
+
+<%- include("partials/footer"); -%>
